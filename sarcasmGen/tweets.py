@@ -36,5 +36,3 @@ def get_tweets(topic, number=10):
         res.append(tweet.full_text)
     return res
 
-print(get_tweets("corona"))  
-
