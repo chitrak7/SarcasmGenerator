@@ -1,0 +1,9 @@
+<p>Showing result for <b>{{result.query}}</b></p>
+<p>Overall sentiment detected <b>{{result.sentiment}}</b></p>
+<p>List of tweets captured</p>
+<ul>
+    {% for tweet in result.tweets %}
+    <li>{{ tweet }}</li>
+    {% endfor %}
+</ul>
+<p>Sarcastic Response:: {{result.sarcastic_response}}</p>
